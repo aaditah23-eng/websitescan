@@ -30,7 +30,7 @@ export async function checkTLS(domain: string) {
     cipher: string | null;
     certificateValid: boolean;
     certificateIssuer: string | null;
-    certificateSubject: Record<string, unknown> | null;
+    certificateSubject: unknown;
     validFrom: string | null;
     validTo: string | null;
     daysUntilExpiry: number | null;
